@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>protein Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../CSS/Fresh-pressed.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <section class="NavbarSection" id="NavbarSection">
+    <nav class="Navbar_container" id="navbar">
+      <div class="Navbar_logo">
+        <div class="logo"><a href="Gymhome.html">amicablegym</a></div>
+      </div>
+
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a class="navbar-btn" href="#About"> About</a>
+          <ul class="dropdown-content">
+            <li><a href="instrutor.html">Instructors</a></li>
+            <li><a href="classy.html">Classes</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </li>
+        <li><a href="./schedule.html"> schedules</a></li>
+        <li><a href="./Contact.html"> Contact</a></li>
+        <li><a href="./gymStore.html"> stores</a></li>
+      </ul>
+
+      <div class="right-nav">
+        <span id="loginBtn">Login</span>
+        <ul class="icons">
+          <li>
+            <a href="#"> <i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-play-line"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-facebook-fill"></i></a>
+          </li>
+        </ul>
+        <a class="cart-icon" href="#"><i class="ri-shopping-cart-line"> <span>0</span></i></a>
+      </div>
+      <div class="menu">
+        <a class="cart-icon" href="#"><i class="ri-shopping-cart-line"> <span>0</span></i></a>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Modal and Backdrop -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="loginFormContent"></div>
+      </div>
+  </div>
+  <div id="modalBackdrop" class="backdrop"></div>
+  </section>
+
+
+
+
+
+
+  <SEction class="section2">
+    <div class="return-btn"> <a href="./gymStore.html">store ></a> > <a href="#"> Protein Bars</a></div>
+      
+    <div class="card-container">
+        <div class="card" >
+       
+        <h1>Protein Bars</h1>
+        <h2>$ 25.00 every month</h2>
+        <p>All natural protein bars that you can purchase in a simple reoccurring, monthly order.</p>
+        <ul class="list">
+          <li>25g of protein per serving</li>
+          <li>Grass fed, non-GMO</li>
+          <li>Soy Free and Gluten Free</li>
+          <li> 
+            No artificial colors, sweeteners or flavors</li>
+          <li>Zero added sugar</li>
+        
+        </ul>
+
+
+
+        <div class="select_container">
+          <label for="text">Amount:</label>
+          <select  id="select"> 
+            <option value="celery">Select Amount</option>
+            <option value="fr">6</option>
+            <option value="melon">12</option>
+            <option value="men">24</option>
+            
+          </select>
+          <button type="button" id="btn">subscribe</button>
+
+        </div>
+      </div>
+
+      <img src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596471797623-ZSIF4JDMDD9072G0H0U2/Bar.png?format=750w" alt="proteinBar">
+    </div>
+
+
+
+  </SEction>
+
+
+  <section class="section6" id="section6">
+
+    <div class="footer_section">
+      <div class="top-footer_content">
+        <div class="left-footer_content">
+          <h1>STAY UPDATED</h1>
+          <p>
+            Sign up to be the first to find out when we add new classes,
+            amenities, and more. We respect your privacy and will never share
+            your information with any third-party vendors.
+          </p>
+        </div>
+        <div class="right-footer_content">
+          <input type="email" placeholder="Enter Address" />
+          <button>Sign up</button>
+        </div>
+      </div>
+
+      <hr />
+      <div class="button-footer_content">
+        <div class="left-btn-footer_content">
+          <div class="footer-link">
+            <h1>SUPPORT</h1>
+            <div class="links">
+              <a href="#Term">Terms and Condition</a>
+              <a href="#policy"> Private Policy</a>
+              <a href="FAQs">FAQs</a>
+            </div>
+          </div>
+
+          <div class="Contact-info">
+            <h1>CONTACT</h1>
+            <p>Info@mydomain.com
+              +(234)-9013230019</p>
+          </div>
+        </div>
+
+        <div class="mygym">
+          <h1>AMICABLEGYM</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../JS/Fressh-Pressed.js"></script>
+</body>
+
+</html>

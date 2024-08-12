@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account sign in</title>
+    <link rel="stylesheet" href="../CSS/sign-up.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="section_form">
+            <div class="head-form">
+                <h1>Create Account</h1>
+            </div>
+            <form action="">
+
+                <div class="input-name">
+                    <div class="input-propeties">
+                        <input type="name" id="FirstName" placeholder="First Name" required>
+                    </div>
+                    <div class="input-propeties">
+                        <input type="name" id="LastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="input-pas">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-pas">
+                    <input type="password" id="password" placeholder=" Create password" required>
+                </div>
+
+                <div class="input-pas">
+                    <input type="password" id="typepassword" placeholder="Re-type password" required>
+                </div>
+                <div class="btn">
+                    <button id="submit" type="submit" >
+                        <span>Create account</span>
+                    </button>
+                </div>
+
+                <div class="form_footer">
+                    <span>Already have accout?</span>
+                    <a href="../SIGN -IN/sign-in.html">sigin in</a>
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <script type="module">
+        
+      </script>
+
+    <script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAeyAAv7PRPjIfpZii-f8itxNNEvP1ltRU",
+          authDomain: "amicablegym-33569.firebaseapp.com",
+          databaseURL: "https://amicablegym-33569-default-rtdb.firebaseio.com",
+          projectId: "amicablegym-33569",
+          storageBucket: "amicablegym-33569.appspot.com",
+          messagingSenderId: "296265358631",
+          appId: "1:296265358631:web:58b22a72c41255720a5d02"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, set, get, update, remove, ref, child } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js";
+
+        const db = getDatabase();
+
+
+
+
+        var FirstName = document.querySelector("#FirstName");
+        var LastName = document.querySelector("#LastName");
+        var email = document.querySelector("#email");
+        var password = document.querySelector("#password");
+        var typepassword = document.querySelector("#typepassword");
+
+        var insertbtn = document.querySelector("#submit");
+
+
+        function save() {
+
+            set( ref( db, 'users/' + FirstName.value),{
+                    name: FirstName.value,
+                mainName: LastName.value,
+                email: email.value,
+                password: password.value,
+                typepassword: typepassword.value
+            })
+            .then(()=>{
+                alert('account creating successfuly')
+            })
+            .catch((error)=>{
+                alert( error)
+            })
+        }
+
+for(let i = 0; i < 100; i+2){
+
+    // console.log(i);
+}
+
+
+        //  function get()  {=}
+
+        //  function update()  {=}
+
+        //  function remove()  {=}
+
+
+
+        insertbtn.addEventListener('click',save)
+
+    </script>
+
+    // <!-- <script src="sign-up.js"></script> -->
+</body>
+
+</html>

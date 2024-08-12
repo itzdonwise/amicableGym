@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymHome</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../CSS/Gymhome.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <section class="NavbarSection" id="NavbarSection">
+    <nav class="Navbar_container" id="navbar">
+      <div class="Navbar_logo">
+        <div class="logo"><a href="Gymhome.html">amicablegym</a></div>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a class="navbar-btn" href="#About"> About</a>
+          <ul class="dropdown-content">
+            <li><a href="instrutor.html">Instructors</a></li>
+            <li><a href="classy.html">Classes</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </li>
+        <li><a href="./schedule.html"> schedules</a></li>
+        <li><a href="./Contact.html"> Contact</a></li>
+        <li><a href="./gymStore.html"> stores</a></li>
+      </ul>
+      <div class="right-nav">
+        <span id="loginBtn">Login</span>
+        <ul class="icons">
+          <li>
+            <a href="#"> <i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-play-line"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-facebook-fill"></i></a>
+          </li>
+        </ul>
+        <a class="cart-icon" href="#"><i class="ri-shopping-cart-line"> <span>0</span></i></a>
+      </div>
+      <div class="menu">
+        <a class="cart-icon" href="#"><i class="ri-shopping-cart-line"> <span>0</span></i></a>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+
+    <nav class="media" id="media">
+      <!-- <div class="media-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="70px" fill="#5f6368">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </div> -->
+      <ul class=" media-nav-links">
+        <li class="dropdown">
+          <a class="navbar-btn" href="#About"> About</a>
+          <ul class="dropdown-content">
+            <li><a href="instrutor.html">Instructors</a></li>
+            <li><a href="classy.html">Classes</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </li>
+        <li><a href="./schedule.html"> Schedule</a></li>
+        <li><a href="./Contact.html"> Contact</a></li>
+        <li><a href="./gymStore.html"> Stores</a></li>
+
+        <li> <span id="loginBtn">Login</span></li>
+      </ul>
+      <div class="media-right-nav">
+        <ul class="icons">
+          <li>
+            <a href="#"> <i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-play-line"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-facebook-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal and Backdrop -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="loginFormContent"></div>
+      </div>
+    </div>
+    <div id="modalBackdrop" class="backdrop"></div>
+
+    <div class="header_text">
+      <h1>TRAIN ON YOUR OWN TIME.</h1>
+      <div class="btn"><button>join our gym</button></div>
+    </div>
+  </section>
+
+  <section class="Homesection2" id="Homesection2">
+    <div class="homesection2_hero">
+      <h1 class="herotext">
+        WE’RE A HIGH QUALITY GYM DEDICATED TO AFFORDABLE HEALTH AND WELLNESS.
+      </h1>
+      <p class="right_herotext">
+        Klipsan Fitness is a gym where you come as you are, and do your best.
+        Our membership offers both digital and in-club programming aimed at
+        helping you achieve your fitness goals. Discover all of our club’s
+        offerings below.
+      </p>
+    </div>
+
+    <div class="Hero_container">
+      <div class="center_hero_img">
+        <img class="left_img" src="../img/image-asset-left.png
+            " alt="" />
+      </div>
+
+      <div class="main_container">
+        <div class="collum_contain" id="collum_contain">
+          <h1>AMENITIES</h1>
+          <p>
+            At Klipsan Fitness, we’re always expanding our amenities to meet
+            the needs of our community. Something you’d like to see added to
+            our list? Submit a request.
+          </p>
+        </div>
+
+        <div class="row_contain">
+          <div class="left_row_contain">
+            <h2>Modern Facilities</h2>
+            <span>.</span>
+            <h2>Premium Classes</h2>
+            <span>.</span>
+            <h2>Personal Trainers</h2>
+            <span>.</span>
+            <h2>Rockwall</h2>
+            <span>.</span>
+            <h2>Boxing Ring</h2>
+          </div>
+          <div class="left_row_contain">
+            <h2>Juice Bar</h2>
+            <span>.</span>
+            <h2>Personal Nutritiousness</h2>
+            <span>.</span>
+            <h2>Monthly Guest Passes</h2>
+            <span>.</span>
+            <h2>Basketball Courts</h2>
+            <span>.</span>
+            <h2>Lockers</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section3" id="section3">
+    <div class="section3_container">
+      <div class="textContainer">
+        <h1>SCHEDULE A VISIT</h1>
+        <p>
+          Take a free 30-minute tour of either of our locations to help you
+          decide if Klipsan is the right gym for you. You’ll have the
+          opportunity to try equipment, observe classes, and get direct
+          answers to all of your questions.
+        </p>
+      </div>
+
+      <div class="section3_formContainer">
+        <div class="name-req">
+          <label for="name"> Name <h5>(required)</h5></label>
+        </div>
+
+        <div class="name_input">
+          <div class="names_label">
+            <div class="first_N_label">
+              <label for="name">First Name </label>
+              <input type="text" id="firstname" />
+            </div>
+          </div>
+          <div class="lastname_label">
+            <label for="name">Last Name </label>
+            <input type="text" id="lastname" />
+          </div>
+        </div>
+
+        <div class="email_lable">
+          <label for="Email">Email
+            <h5>(required)</h5>
+          </label>
+          <input type="email" id="email" required />
+
+          <div class="date_label">
+            <label for="name">Date
+              <h5>(required)</h5>
+            </label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="submit">
+            <input type="submit" id="submit" />
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- form input section -->
+
+  <section class="section4" id="section4">
+    <div class="section4_container">
+      <span class="section4_span">“</span>
+      <h1>
+        KLIPSAN FITNESS WAS CENTRAL IN HELPING ME GAIN THE STAMINA FOR MY
+        RECENT MARATHON.
+      </h1>
+      <p>-Alejandro Jimenez</p>
+    </div>
+  </section>
+
+  <section class="section5" id="section5">
+    <div class="section5_container">
+      <div class="section5_text_cobtent">
+        <div class="left_content">
+          <h1>BROOKLYN</h1>
+          <p>12834 Fitness Ln. Brooklyn, NY 11385</p>
+        </div>
+        <div class="left_content">
+          <h1>LOS ANGELES</h1>
+          <p>12834 Fitness Ln. Los Angeles, LA 11385</p>
+        </div>
+      </div>
+      <div class="img_content">
+        <!-- data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" -->
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596668265274-GSPGUC1FDYZQZV6RQO7O/2888448.jpg"
+          alt="" />
+
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596669738869-ZW8N793UA9CUEF1A3TW8/Stocksy_comp_2217207+%281%29.jpg"
+          alt="" />
+
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596052046380-NODAIAIAI3KRB35LD6XB/1716591+%281%29.jpg"
+          alt="" />
+
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596052045767-MD3WAUVYTZIPQGVZBN1H/2888434.jpg"
+          alt="" />
+
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596669746101-COD9FP7UTX9AF5T11QMV/Stocksy_comp_2217189+%281%29.jpg"
+          alt="" />
+
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596052045994-4XRAE96RJFI4YUY5C6I3/2888491.jpg"
+          alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section6" id="section6">
+    <div class="footer_section">
+      <div class="top-footer_content">
+        <div class="left-footer_content">
+          <h1>STAY UPDATED</h1>
+          <p>
+            Sign up to be the first to find out when we add new classes,
+            amenities, and more. We respect your privacy and will never share
+            your information with any third-party vendors.
+          </p>
+        </div>
+        <div class="right-footer_content">
+          <input type="email" placeholder="Enter Address" />
+          <button>Sign up</button>
+        </div>
+      </div>
+
+      <hr />
+      <div class="button-footer_content">
+        <div class="left-btn-footer_content">
+          <div class="footer-link">
+            <h1>SUPPORT</h1>
+            <div class="links">
+              <a href="#Term">Terms and Condition</a>
+              <a href="#policy"> Private Policy</a>
+              <a href="FAQs">FAQs</a>
+            </div>
+          </div>
+
+          <div class="Contact-info">
+            <h1>CONTACT</h1>
+            <p>Info@mydomain.com
+              +(234)-9013230019</p>
+          </div>
+        </div>
+
+        <div class="mygym">
+          <h1>AMICABLEGYM</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../JS/GymHome.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

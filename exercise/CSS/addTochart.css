@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#products, #cart {
+    margin: 20px;
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+}
+
+.product, #cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+.product img{
+    width: 200px;
+    height: 240px;
+}
