@@ -1,0 +1,824 @@
+* {
+  font-family: fantasy;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+body .wallpaper {
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  max-height: 100px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9;
+  color: white;
+  top: 0;
+}
+body .wallpaper .left {
+  padding-left: 0.9rem;
+  width: 20%;
+}
+body .wallpaper .left h1 {
+  font-weight: 300;
+  font-size: 3dvw;
+  text-transform: uppercase;
+}
+body .wallpaper .center {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.8s ease-in;
+  width: 40%;
+}
+body .wallpaper .center .links {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  gap: 1rem;
+}
+body .wallpaper .center .links li {
+  font-family: sans-serif;
+  font-size: 1.2dvw;
+  font-weight: 700;
+}
+body .wallpaper .center .login_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+body .wallpaper .center .login_wrap .login {
+  width: 40%;
+  font-size: 1.3dvw;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body .wallpaper .center .login_wrap .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+body .wallpaper .center .login_wrap .icons .icon {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+body .wallpaper .center .login_wrap .icons .icon i {
+  font-size: 1.2dvw;
+}
+body .wallpaper .center.show {
+  display: flex;
+  transition: all 0.8s ease-in;
+}
+body .wallpaper .right {
+  padding-right: 2rem;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+body .wallpaper .right .cart {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  font-weight: 300;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+body .wallpaper .right .cart i {
+  padding: 0;
+  margin: 0;
+  font-size: 1.7dvw;
+}
+body .wallpaper .right .icon .menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+body .wallpaper .right .icon .menu span {
+  width: 50px;
+  height: 3px;
+  font-weight: lighter;
+  background-color: black;
+  margin: 4px;
+  transition: transform 0.19s linear;
+}
+body .wallpaper .right .icon .menu .closer.top {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+body .wallpaper .right .icon .menu .closer.bottom {
+  transform: rotate(-45deg);
+}
+body .scrolled {
+  background: black;
+}
+body .mother-box {
+  margin-bottom: 20rem;
+}
+body .mother-box .container {
+  height: 100vh;
+  width: 100%;
+  background: url(https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596048731669-4AUZ14ZOXBGPS4T5JGXH/drive-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body .mother-box .container .hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-block: 20rem;
+}
+body .mother-box .container .hero .content h1 {
+  font-size: 7dvw;
+  font-weight: 300;
+  color: white;
+}
+body .mother-box .container .hero .content .btn {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+body .mother-box .container .hero .content .btn button {
+  border-radius: 35px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+  padding: 20px;
+  padding-inline: 45px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-bottom: -33px;
+}
+body .mother-box section.Sections {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+body .mother-box section.Sections .blackbox {
+  background: black;
+  min-height: 800px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+body .mother-box section.Sections .blackbox .first {
+  display: flex;
+  padding: 14px;
+  padding-block: 40px;
+  align-items: center;
+  max-height: 95vh;
+}
+body .mother-box section.Sections .blackbox .first h1 {
+  font-size: 4.5dvw;
+  font-weight: 300;
+  width: 60%;
+}
+body .mother-box section.Sections .blackbox .first p {
+  font-size: 1.6dvw;
+  line-height: 2rem;
+  width: 40%;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .blackbox .second {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .mother-box section.Sections .blackbox .second .img {
+  width: 80%;
+  aspect-ratio: 1;
+  background: url(https://images.squarespace-cdn.com/content/v1/5ee2684b693dbe1560bd2b67/1596051118217-D4NRSLWZI4MUYGR072IO/image-asset.png?format=1500w);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .mother-box section.Sections .blackbox .second .blackbox_img {
+  height: 100%;
+}
+body .mother-box section.Sections .blackbox .second .blackbox_img:first-child {
+  margin-top: 80px;
+}
+body .mother-box section.Sections .blackbox .second .blackbox_img:last-child {
+  margin-left: -4rem;
+  height: 100%;
+  width: 33%;
+}
+body .mother-box section.Sections .blackbox .second .blackbox_img:last-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+body .mother-box section.Sections .blackbox .third {
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .blackbox .third .subheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .mother-box section.Sections .blackbox .third .subheader h1 {
+  font-weight: 300;
+  font-size: 4dvw;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+body .mother-box section.Sections .blackbox .third .subheader p {
+  font-family: sans-serif;
+  font-size: 1.6dvw;
+  width: 50%;
+  padding: 20px;
+  margin: 0;
+}
+body .mother-box section.Sections .blackbox .third .outline {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .blackbox .third .outline .list {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  gap: 1rem;
+}
+body .mother-box section.Sections .blackbox .third .outline .list li {
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form {
+  padding-block: 60px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+}
+body .mother-box section.Sections .form .left {
+  width: 40%;
+  padding: 20px;
+  align-self: flex-start;
+}
+body .mother-box section.Sections .form .left h1 {
+  font-size: 4dvw;
+  font-weight: 300;
+  margin: 0;
+  padding: 20px;
+}
+body .mother-box section.Sections .form .left p {
+  font-family: sans-serif;
+  line-height: 1.8rem;
+  font-size: 1.4dvw;
+}
+body .mother-box section.Sections .form .right {
+  width: 50%;
+}
+body .mother-box section.Sections .form .right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form .right form p {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+body .mother-box section.Sections .form .right form p span {
+  opacity: 0.5;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form .right form .row {
+  display: flex;
+  gap: 10px;
+  font-family: sans-serif;
+  width: 100%;
+}
+body .mother-box section.Sections .form .right form .row .input {
+  width: 100%;
+}
+body .mother-box section.Sections .form .right form .row .input label {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form .right form .row .input label span {
+  opacity: 0.5;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form .right form .row .input input {
+  width: 100%;
+  color: #b3cadd;
+  padding: 15px;
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form .right form .btn {
+  font-family: sans-serif;
+}
+body .mother-box section.Sections .form .right form .btn button {
+  font-family: sans-serif;
+  text-transform: capitalize;
+  padding: 20px;
+  padding-inline: 40px;
+  border-radius: 70px;
+  font-size: 1.2em;
+  background-color: white;
+  border: 1.5px solid black;
+}
+body .mother-box section.Sections .quote {
+  padding: 20px;
+  background: url(https://images.squarespace-cdn.com/content/v1/61b9fe63a66edc2d99f5ace0/1211f1b9-340b-46bd-9bba-9fac9ef43562/milan+2.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+body .mother-box section.Sections .quote p {
+  text-align: center;
+  width: 70%;
+  font-size: 5dvw;
+}
+body .mother-box section.Sections .quote small {
+  font-family: sans-serif;
+  font-size: 1.3dvw;
+}
+body .mother-box section.Sections .gallery {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .mother-box section.Sections .gallery .up {
+  padding: 40px;
+  padding-inline: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  font-weight: 400;
+}
+body .mother-box section.Sections .gallery .up .text {
+  width: 46%;
+}
+body .mother-box section.Sections .gallery .up .text h1 {
+  font-weight: 400;
+  font-size: 3.6dvw;
+  text-align: center;
+}
+body .mother-box section.Sections .gallery .up .text h3 {
+  font-family: arial;
+  text-align: center;
+  font-weight: 300;
+}
+body .mother-box section.Sections .gallery .middle {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+}
+body .mother-box section.Sections .gallery .middle .g_img {
+  width: 16.6666666667%;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+body .mother-box section.Sections .gallery .down {
+  background: black;
+  padding-inline: 30px;
+  padding-block: 50px;
+}
+body .mother-box section.Sections .gallery .down .box {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+body .mother-box section.Sections .gallery .down .box .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+body .mother-box section.Sections .gallery .down .box .left h1 {
+  padding: 20px;
+  font-size: 3.5dvw;
+  margin: 0;
+  font-weight: 300;
+}
+body .mother-box section.Sections .gallery .down .box .left p {
+  font-size: 1.3dvw;
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 2em;
+}
+body .mother-box section.Sections .gallery .down .box .right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+body .mother-box section.Sections .gallery .down .box .right .input input {
+  padding: 20px;
+  padding-block: 20px;
+  padding-inline: 50px;
+  outline: none;
+  border: none;
+}
+body .mother-box section.Sections .gallery .down .box .right .input input::-moz-placeholder {
+  font-family: sans-serif;
+  font-size: 1.3dvw;
+}
+body .mother-box section.Sections .gallery .down .box .right .input input::placeholder {
+  font-family: sans-serif;
+  font-size: 1.3dvw;
+}
+body .mother-box section.Sections .gallery .down .box .right button {
+  font-family: arial;
+  padding: 20px;
+  border-radius: 50px;
+  padding-inline: 40px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+body footer.sectionfooter {
+  margin-top: 25rem;
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 30px;
+}
+body footer.sectionfooter .leftside {
+  width: 30%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+body footer.sectionfooter .leftside .support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+body footer.sectionfooter .leftside .support h1 {
+  font-weight: 300;
+}
+body footer.sectionfooter .leftside .support aside {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body footer.sectionfooter .leftside .support aside a {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+body footer.sectionfooter .leftside .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer.sectionfooter .leftside .info h1.contact {
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  color: white;
+}
+body footer.sectionfooter .leftside .info aside {
+  font-family: sans-serif;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+body footer.sectionfooter .leftside .info aside a {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+body footer.sectionfooter .leftside .info aside p {
+  color: white;
+}
+body footer.sectionfooter .rightside h1 {
+  font-size: 2.5dvw;
+  color: white;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  body .wallpaper {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    border: 1px solid black;
+    top: 0;
+    z-index: 98;
+  }
+  body .wallpaper .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  body .wallpaper .left h1 {
+    padding: 0;
+    font-size: 1.9rem;
+    font-weight: 300;
+  }
+  body .wallpaper .right {
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    width: 40%;
+  }
+  body .wallpaper .right .icon {
+    font-size: 1.5rem;
+    display: block;
+  }
+  body .wallpaper .right .cart {
+    font-size: 1.6rem;
+  }
+  body .wallpaper .right .cart i {
+    font-size: 1.6rem;
+  }
+  body .wallpaper .center.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(-80px);
+    transition: all 0.8s ease-in;
+    background-color: white;
+  }
+  body .wallpaper .center {
+    position: absolute;
+    bottom: -180px;
+    opacity: 0;
+    width: 100%;
+    padding: 10px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    transition: all 0.8s ease-in;
+  }
+  body .wallpaper .center * {
+    width: 100%;
+    margin-block: 0;
+  }
+  body .wallpaper .center .links {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+  body .wallpaper .center .login {
+    font-size: 2rem;
+  }
+  body .wallpaper .center .icons {
+    width: 50%;
+  }
+  body .wallpaper .center .icons .icon {
+    width: 100px;
+    height: 100px;
+  }
+  body .wallpaper .left {
+    padding-left: 0.5rem;
+  }
+  body .wallpaper.white {
+    background-color: white;
+    inset: 0;
+  }
+  body .mother-box {
+    margin-bottom: 15rem;
+  }
+  body .mother-box .container {
+    background: rgb(0, 0, 0);
+  }
+  body .mother-box .container .content {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: green;
+  }
+  body .mother-box .container .hero {
+    flex-direction: column;
+    background-color: red;
+    border: 2px solid red;
+  }
+  body .mother-box .container .hero h1 {
+    background-color: aqua;
+    width: 100%;
+    font-size: 4.5rem;
+  }
+  body .mother-box .container .hero .btn {
+    width: 100%;
+    background-color: aqua;
+  }
+  body .mother-box .container .hero .btn button {
+    width: 100%;
+  }
+  body .mother-box section.Sections .blackbox .first {
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 0.7rem;
+  }
+  body .mother-box section.Sections .blackbox .first h1 {
+    width: 100%;
+    font-size: 2.9rem;
+  }
+  body .mother-box section.Sections .blackbox .first p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  body .mother-box section.Sections .blackbox .third .subheader {
+    display: flex;
+    flex-direction: column;
+  }
+  body .mother-box section.Sections .blackbox .third .subheader h1 {
+    font-size: 2.2rem;
+  }
+  body .mother-box section.Sections .blackbox .third .subheader p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  body .mother-box section.Sections .blackbox .third .outline {
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    border: 2px solid red;
+  }
+  body .mother-box section.Sections .blackbox .third .outline .list {
+    align-items: center;
+  }
+  body .mother-box section.Sections .form {
+    flex-direction: column;
+  }
+  body .mother-box section.Sections .form .left {
+    width: 100%;
+  }
+  body .mother-box section.Sections .form .left h1 {
+    font-size: 1.4rem;
+  }
+  body .mother-box section.Sections .form .left p {
+    font-size: 1rem;
+  }
+  body .mother-box section.Sections .form .right {
+    width: 100%;
+  }
+  body .mother-box section.Sections .gallery .down .box {
+    flex-direction: column;
+  }
+  body .mother-box section.Sections .gallery .down .box .left {
+    width: 100%;
+  }
+  body .mother-box section.Sections .gallery .down .box .left h1 {
+    font-size: 1.6rem;
+  }
+  body .mother-box section.Sections .gallery .down .box .left p {
+    font-size: 1rem;
+  }
+  body .mother-box section.Sections .gallery .down .box .right {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  body .mother-box section.Sections .gallery .down .box .right .input input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  body .mother-box section.Sections .gallery .down .box .right .input input::placeholder {
+    font-size: 1rem;
+  }
+  body footer.sectionfooter {
+    margin-top: 0rem;
+    flex-direction: column;
+  }
+  body footer.sectionfooter .leftside .support h1 {
+    font-size: 1.3rem;
+  }
+  body footer.sectionfooter .leftside .support h1 aside a {
+    font-size: 1rem;
+  }
+  body footer.sectionfooter .rightside h1 {
+    font-size: 1.3rem;
+  }
+  /* CSS rules specific to phones */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    position: relative;
+  }
+  .wallpaper {
+    display: flex;
+    width: 100%;
+    position: relative;
+    border: 2px solid;
+    padding-inline: 2rem;
+  }
+  .wallpaper .center.show {
+    display: flex;
+    position: absolute;
+    opacity: 1;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  .wallpaper .left {
+    padding-left: 2rem;
+  }
+  .wallpaper .center {
+    padding: 10px;
+    position: absolute;
+    align-items: start;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    width: 100vw;
+  }
+  .wallpaper .center * {
+    width: 100%;
+    margin-block: 0;
+  }
+  .wallpaper .center .links {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+  .wallpaper .center .login {
+    font-size: 2rem;
+  }
+  .wallpaper .center .icons {
+    width: 50%;
+  }
+  .wallpaper .center .icons .icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .wallpaper .right {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .wallpaper .right .icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */
